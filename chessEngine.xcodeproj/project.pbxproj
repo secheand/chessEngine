@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		86457A5A29CD2EA50054D5C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86457A5929CD2EA50054D5C7 /* main.cpp */; };
 		86457A6A29CD52990054D5C7 /* guiBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86457A6829CD52990054D5C7 /* guiBoard.cpp */; };
+		86457A6E29CE174E0054D5C7 /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86457A6C29CE174E0054D5C7 /* utility.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,8 @@
 		86457A6529CD37B10054D5C7 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = chessEngine/assets; sourceTree = "<group>"; };
 		86457A6829CD52990054D5C7 /* guiBoard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = guiBoard.cpp; sourceTree = "<group>"; };
 		86457A6929CD52990054D5C7 /* guiBoard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = guiBoard.hpp; sourceTree = "<group>"; };
+		86457A6C29CE174E0054D5C7 /* utility.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utility.cpp; sourceTree = "<group>"; };
+		86457A6D29CE174E0054D5C7 /* utility.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = utility.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				86457A5929CD2EA50054D5C7 /* main.cpp */,
+				86457A6B29CE17300054D5C7 /* utility */,
 				86457A6629CD521A0054D5C7 /* guiBoard */,
 			);
 			path = chessEngine;
@@ -63,6 +67,15 @@
 				86457A6929CD52990054D5C7 /* guiBoard.hpp */,
 			);
 			path = guiBoard;
+			sourceTree = "<group>";
+		};
+		86457A6B29CE17300054D5C7 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				86457A6C29CE174E0054D5C7 /* utility.cpp */,
+				86457A6D29CE174E0054D5C7 /* utility.hpp */,
+			);
+			path = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86457A6E29CE174E0054D5C7 /* utility.cpp in Sources */,
 				86457A6A29CD52990054D5C7 /* guiBoard.cpp in Sources */,
 				86457A5A29CD2EA50054D5C7 /* main.cpp in Sources */,
 			);

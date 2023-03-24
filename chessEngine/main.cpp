@@ -15,15 +15,24 @@
 // - Click OK.
 //
 
-#include <SFML/Graphics.hpp>
+#include "guiBoard.hpp"
+#include "utility.hpp"
 
 int main(int argc, char const** argv)
 {
     // Declarations
     sf::Event event;
+    //std::vector<gui::pieceType> guiBoard;
+    std::vector<gui::chessPiece> whitePieces, blackPieces;
+    gui::chessBoard chessBoard;
+    
+    if(!gui::setupBoard(whitePieces, blackPieces, chessBoard))
+    {
+        return -1;
+    }
     
     // Create the main window
-    sf::RenderWindow window(sf::VideoMode(1000, 1000), "Chess");
+    sf::RenderWindow window(sf::VideoMode(800, 800), "Chess");
 
     // Start the game loop
     while (window.isOpen())
@@ -44,6 +53,8 @@ int main(int argc, char const** argv)
 
         // Clear screen
         window.clear();
+        
+        renderPieces(window, whitePieces, blackPieces, chessBoard);
 
         // Update the window
         window.display();
