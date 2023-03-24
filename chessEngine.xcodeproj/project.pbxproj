@@ -13,10 +13,7 @@
 /* Begin PBXFileReference section */
 		86457A5629CD2EA50054D5C7 /* chessEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chessEngine; sourceTree = BUILT_PRODUCTS_DIR; };
 		86457A5929CD2EA50054D5C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		86457A5C29CD2EA50054D5C7 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cute_image.jpg; path = ../cute_image.jpg; sourceTree = "<group>"; };
-		86457A5D29CD2EA50054D5C7 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../nice_music.ogg; sourceTree = "<group>"; };
-		86457A5E29CD2EA50054D5C7 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../sansation.ttf; sourceTree = "<group>"; };
-		86457A5F29CD2EA50054D5C7 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		86457A6529CD37B10054D5C7 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = chessEngine/assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +30,7 @@
 		86457A4E29CD2EA50054D5C7 = {
 			isa = PBXGroup;
 			children = (
+				86457A6529CD37B10054D5C7 /* assets */,
 				86457A5829CD2EA50054D5C7 /* chessEngine */,
 				86457A5729CD2EA50054D5C7 /* Products */,
 			);
@@ -50,20 +48,8 @@
 			isa = PBXGroup;
 			children = (
 				86457A5929CD2EA50054D5C7 /* main.cpp */,
-				86457A5B29CD2EA50054D5C7 /* Resources */,
 			);
 			path = chessEngine;
-			sourceTree = "<group>";
-		};
-		86457A5B29CD2EA50054D5C7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				86457A5C29CD2EA50054D5C7 /* cute_image.jpg */,
-				86457A5D29CD2EA50054D5C7 /* nice_music.ogg */,
-				86457A5E29CD2EA50054D5C7 /* sansation.ttf */,
-				86457A5F29CD2EA50054D5C7 /* icon.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +119,7 @@
 		86457A6029CD2EA50054D5C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -149,7 +136,7 @@
 					/usr/local/lib/,
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
@@ -177,6 +164,7 @@
 		86457A6129CD2EA50054D5C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -193,7 +181,7 @@
 					/usr/local/lib/,
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
