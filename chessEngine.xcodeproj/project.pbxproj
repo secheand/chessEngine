@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		86457A5A29CD2EA50054D5C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86457A5929CD2EA50054D5C7 /* main.cpp */; };
+		86457A6A29CD52990054D5C7 /* guiBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86457A6829CD52990054D5C7 /* guiBoard.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86457A5629CD2EA50054D5C7 /* chessEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chessEngine; sourceTree = BUILT_PRODUCTS_DIR; };
 		86457A5929CD2EA50054D5C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		86457A6529CD37B10054D5C7 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = chessEngine/assets; sourceTree = "<group>"; };
+		86457A6829CD52990054D5C7 /* guiBoard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = guiBoard.cpp; sourceTree = "<group>"; };
+		86457A6929CD52990054D5C7 /* guiBoard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = guiBoard.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +51,18 @@
 			isa = PBXGroup;
 			children = (
 				86457A5929CD2EA50054D5C7 /* main.cpp */,
+				86457A6629CD521A0054D5C7 /* guiBoard */,
 			);
 			path = chessEngine;
+			sourceTree = "<group>";
+		};
+		86457A6629CD521A0054D5C7 /* guiBoard */ = {
+			isa = PBXGroup;
+			children = (
+				86457A6829CD52990054D5C7 /* guiBoard.cpp */,
+				86457A6929CD52990054D5C7 /* guiBoard.hpp */,
+			);
+			path = guiBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86457A6A29CD52990054D5C7 /* guiBoard.cpp in Sources */,
 				86457A5A29CD2EA50054D5C7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
