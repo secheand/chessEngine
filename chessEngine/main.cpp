@@ -55,6 +55,21 @@ int main(int argc, char const** argv)
         window.clear();
         
         renderPieces(window, whitePieces, blackPieces, chessBoard);
+        
+        //window.draw(whitePieces[0].sprite);
+        
+        gui::chessPiece whitePawn(std::make_pair(2,1), gui::pieceType::pawn);
+        sf::Texture whitePiecesTextures;
+        if(!whitePiecesTextures.loadFromFile("assets/whitePawn.png"));
+        whitePawn.texture.loadFromFile("assets/whitePawn.png");
+		whitePawn.sprite.setTexture(whitePiecesTextures);
+		sf::FloatRect pieceRect;
+		pieceRect = whitePawn.sprite.getLocalBounds();
+		whitePawn.sprite.setOrigin(pieceRect.left + pieceRect.width / 2, pieceRect.top + pieceRect.height / 2);
+		whitePawn.sprite.setPosition(whitePawn.getPosition().first*100-50, whitePawn.getPosition().second*100-50);
+		whitePawn.sprite.setScale(1, 1);
+
+		window.draw(whitePawn.sprite);
 
         // Update the window
         window.display();
